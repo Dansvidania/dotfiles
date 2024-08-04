@@ -1,4 +1,9 @@
+# do not commit secrets that are normally injected in env vars
 secrets/**
+
+# do not commit tmux plugins, they are installed via tpm
 .config/tmux/plugins/**
 
+# prevent committing secrets via pgcli
 .config/pgcli/log
+.config/pgcli/history
