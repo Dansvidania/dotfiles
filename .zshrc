@@ -54,6 +54,7 @@ alias vimrc="nvim ~/.config/nvim/lua/user/init.lua"
 alias vimplugins="nvim ~/.config/nvim/lua/user/plugins/user.lua"
 alias reload="source ~/.zshrc"
 alias vimf='nvim $(fzf -m --preview="bat --color=always {}")'
+alias omp=oh-my-posh
 
 
 ### work/job specific configs
@@ -116,6 +117,8 @@ setopt HIST_NO_STORE
 
 #oh my posh prompt
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  # to run with a theme, then export with 'omp config export --format toml --output ~/dotfiles/oh-my-posh.toml'
+  # eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/catppuccin.omp.json)"
   eval "$(oh-my-posh init zsh --config ~/dotfiles/oh-my-posh.toml)"
 fi
 
