@@ -64,6 +64,10 @@ alt-shift-0 = 'move-node-to-workspace 10'
 alt-shift-c = 'reload-config'
 
 alt-r = 'mode resize'
+alt-shift-esc = 'mode vim'
+
+[mode.vim.binding]
+alt-shift-esc = 'mode main'
 
 [mode.resize.binding]
 h = 'resize width -50'
@@ -72,3 +76,6 @@ k = 'resize height -50'
 l = 'resize width +50'
 enter = 'mode main'
 esc = 'mode main'
+
+[workspace-to-monitor-force-assignment]
+10 = '^built-in retina display$'
